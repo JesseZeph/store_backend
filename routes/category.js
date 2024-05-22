@@ -96,7 +96,7 @@ router.put('/:id', asyncHandler(async (req, res) => {
             let image = req.body.image;
 
             if (req.file) {
-                image = `http://localhost:3000/image/category/${req.file.filename}`;
+                image = `https://storebackend-production-3700.up.railway.app/image/category/${req.file.filename}`;
             }
 
             if (!name || !image) {
